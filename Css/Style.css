@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'UniQAIDAR_Talabat-01';
+    src: url('../fonts/UniQAIDAR_Talabat-01.ttf') format('ttf');
+    /* Add additional formats if needed, e.g., format('ttf') */
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+  }
+  body {
+      background-color: var(--white-color);
+      text-align: center;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'UniQAIDAR_Talabat-01', sans-serif;
+    } 
+    
+    :root {
+        --main-color : #0D465C;
+        --black-color : #000000;
+        --white-color : #ffffff;
+    }
+    
+    #commingsoon .logo {
+        max-width: 45%;
+    }
+    #commingsoon h1 {
+        font-size: 72px;
+        color: var(--main-color);
+        font-weight: 1000;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    #commingsoon .lead {
+        font-weight: bold;
+    }
+    @media screen and (max-width: 768px) {
+        #commingsoon h1 {
+            font-size: 50px;
+        }
+        
+        #commingsoon .logo {
+            max-width: 100% !important;
+        }
+    }
+
+    /* -------------------------------Home Page ----------------------------- */
+    /* -------------------------------Main Text ----------------------------- */
+    #maintext {
+        background-color: var(--main-color);
+        color: var(--white-color);
+    }
+    #maintext p {
+        line-height: 1.9;
+        margin: 0;
+    }
+    /* -------------------------------Main Text ----------------------------- */
+    /* -------------------------------Main Nav------------------------- */
+    .mainnav ul li a {
+        color: var(--black-color);
+        font-size: 18px;
+        display: block;
+        padding: 30px 20px;
+        position: relative;
+        line-height: 2;
+}
+
+.mainnav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+    .mainnav ul img {
+        width: 18px;
+        height: auto;
+    }
+    .mainnav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+    .mainnav  .row {
+        overflow: hidden;
+    }
+    .mainnav .dropdown-item {
+        color: var(--black-color);
+        font-size: 18px;
+        display: block;
+        padding: 20px 10px !important;
+        /* position: relative; */
+    }
+    .mainnav ul li a:hover::after {
+        width: 100%;
+    }
+    /* -------------------------------Main Nav------------------------- */
+    /* -------------------------------Stiky Nav ----------------------------- */
+    .stickynav ul {
+        align-items: center;
+    }
+
+    .stickynav ul li {
+        font-size: 24px;
+    }
+
+    .stickynav ul li a {
+        color: black !important;
+        font-weight: 700 !important;
+    }
+    /* -------------------------------Stiky Nav ----------------------------- */
+    section {
+        height: 1500px;
+    }
